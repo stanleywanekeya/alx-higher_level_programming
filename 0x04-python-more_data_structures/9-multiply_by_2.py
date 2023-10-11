@@ -1,4 +1,4 @@
-#!/usr/bin/pthon3
+#!/usr/bin/python3
 def multiply_by_2(a_dictionary):
     new_list = a_dictionary.copy()
     list_key = list(new_list.keys())
