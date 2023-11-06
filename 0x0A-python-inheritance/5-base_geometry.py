@@ -2,7 +2,7 @@
 """Creation of class"""
 
 
-class BaseGeometry(obj):
+class BaseGeometry:
     """Creation of class BaseGeometry"""
 
     pass
