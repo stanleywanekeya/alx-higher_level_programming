@@ -90,7 +90,7 @@ class Base:
             empty list if file not found
             else list of instanciated class
         """
-        filename = str(cls.__name__) + "json"
+        filename = str(cls.__name__) + ".json"
         try:
             with open(filename, "r") as jsonfile:
                 list_dicts = Base.from_json_string(jsonfile.read())
