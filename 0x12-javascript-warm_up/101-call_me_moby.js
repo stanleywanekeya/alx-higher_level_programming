@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-exports.multFunc = (a, func) => {
-  for (let i = 0; i < a; ++i) {
-    func();
+exports.callMeMoby = (x, theFunction) => {
+  for (let i = 0; i < x; ++i) {
+    theFunction();
   }
 };
