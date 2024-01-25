@@ -1,3 +1,3 @@
-#!/usr/bin/bash
-#Shows the option of a url
-curl -sX DELETE "$1"
+#!/bin/bash
+# Display all HTTP methods the server of a given URL will accept.
+curl -sI "$1" | grep "Allow" | cut -d " " -f 2-
