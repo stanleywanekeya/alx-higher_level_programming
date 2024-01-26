@@ -1,13 +1,18 @@
 #!/usr/bin/python3
-"""request site and handles errors"""
-import requests
+"""A script that
+- takes in a URL
+- sends a request to the URL
+- displays the body of the response.
+"""
 import sys
+import requests
 
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    t = requests.get(url)
-    if t.status_code >= 400:
+
+    r = requests.get(url)
+    if r.status_code >= 400:
         print("Error code: {}".format(r.status_code))
     else:
-        print(t.text)
+        print(r.text)
